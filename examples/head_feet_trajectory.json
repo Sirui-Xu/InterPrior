@@ -1,0 +1,9 @@
+{
+  "mode": "trajectory",
+  "profile": "sparse_human",
+  "joints": [
+    "Head",
+    "L_Ankle",
+    "R_Ankle"
+  ]
+}

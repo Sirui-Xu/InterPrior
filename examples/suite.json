@@ -1,0 +1,52 @@
+{
+  "cases": [
+    {
+      "name": "object_snapshot",
+      "motion_file": "sub8_largebox_003.pt",
+      "reference_config": "examples/object_snapshot.json",
+      "steps": 240
+    },
+    {
+      "name": "human_snapshot",
+      "motion_file": "sub2_largetable_000.pt",
+      "reference_config": "examples/human_snapshot.json",
+      "steps": 240
+    },
+    {
+      "name": "combined_snapshot",
+      "motion_file": "sub8_suitcase_001.pt",
+      "reference_config": "examples/combined_snapshot.json",
+      "steps": 240
+    },
+    {
+      "name": "object_trajectory",
+      "motion_file": "sub2_largetable_000.pt",
+      "reference_config": "examples/object_trajectory.json",
+      "steps": 600
+    },
+    {
+      "name": "human_trajectory",
+      "motion_file": "sub8_plasticbox_000.pt",
+      "reference_config": "examples/human_trajectory.json",
+      "steps": 600
+    },
+    {
+      "name": "combined_trajectory",
+      "motion_file": "sub2_woodchair_001.pt",
+      "reference_config": "examples/combined_trajectory.json",
+      "steps": 600
+    },
+    {
+      "name": "wrist_trajectory",
+      "motion_file": "sub8_suitcase_000.pt",
+      "reference_config": "examples/wrist_trajectory.json",
+      "steps": 600
+    },
+    {
+      "name": "head_feet_trajectory",
+      "motion_file": "sub2_largetable_000.pt",
+      "reference_config": "examples/head_feet_trajectory.json",
+      "steps": 600
+    }
+  ]
+}

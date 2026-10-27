@@ -1,0 +1,7 @@
+{
+  "mode": "trajectory",
+  "profile": "sparse_human",
+  "joints": [
+    "R_Wrist"
+  ]
+}

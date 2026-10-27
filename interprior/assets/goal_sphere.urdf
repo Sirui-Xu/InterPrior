@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<robot name="goal_sphere">
+  <link name="sphere">
+    <visual>
+      <geometry><sphere radius="0.045"/></geometry>
+    </visual>
+  </link>
+</robot>

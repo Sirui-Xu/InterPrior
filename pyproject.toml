@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "interprior"
+version = "0.1"
+description = "Generative control for physics-based human-object interactions"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+dependencies = ["torch>=1.13", "numpy>=1.21,<1.24", "rl-games==1.1.4", "trimesh==4.2.4", "PyYAML>=6", "Pillow>=9"]
+
+[project.scripts]
+interprior-inference = "interprior.inference:main"
+
+[project.optional-dependencies]
+dev = ["black==24.8.0", "ruff==0.6.9"]
+
+[tool.setuptools.packages.find]
+include = ["interprior*"]
+
+[tool.setuptools.package-data]
+interprior = ["configs/*.yaml", "assets/*.urdf"]
+
+[tool.black]
+target-version = ["py38"]
+line-length = 88
+
+[tool.ruff]
+target-version = "py38"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
+
+[tool.ruff.lint.per-file-ignores]
+"interprior/envs/humanoid.py" = ["F401", "F403", "F405", "F841"]
+"interprior/envs/torch_utils.py" = ["F401", "F403", "F405"]
+"interprior/networks.py" = ["F401", "F841"]
